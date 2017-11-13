@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class HeightCalculator{
+	
+	public static void main (String[] args) {
+		
+		Scanner reader = new Scanner(System.in);
+		
+		System.out.println("Enter a time less than 4.5 seconds: ");
+		
+		float time = reader.nextInt();
+		reader.close(); 
+		
+		System.out.println("The height of the object is: " + ((100)-((4.9)*(time*time))));
+		
+	}
+	
+}
